@@ -184,6 +184,7 @@ html, body {
   padding: 2em 0 5em 0;
   width: 60%;
   margin-bottom: 1em;
+  font-size: 0.9em;
 }
 .container-footer .footer a {
   margin: 2em;
@@ -263,7 +264,7 @@ html, body {
     display: block;
     position: absolute;
     z-index: -1;
-    width: 20%;
+    width: 15%;
     top: 35em;
     left: 2em;
     transform: rotate(-20deg);
@@ -272,17 +273,20 @@ html, body {
     display: block;
     position: absolute;
     z-index: -1;
-    width: 18%;
+    width: 15%;
     right: 1em;
   }
   .main-text .background-image-three {
     display: block;
     position: absolute;
     z-index: -1;
-    width: 20%;
+    width: 15%;
     top: 35em;
     right: 2em;
     transform: rotate(20deg);
+  }
+  .main-text > img {
+    box-shadow: 0 0 0.2em 0.2em;
   }
   .skills {
     display: flex;
@@ -328,10 +332,10 @@ html, body {
   .skills .skills-image .thirdimage,
   .skills .skills-image .fourthimage {
     position: inherit;
-    width: 10%;
+    width: 7%;
   }
   .skills .skills-image .secondimage {
-    width: 9em;
+    width: 5.5em;
   }
   .skills .skills-image img {
     width: 100%;
@@ -341,6 +345,7 @@ html, body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin: 0 0 1em 0;
   }
   .container-footer .footer {
     left: -2em;
@@ -357,5 +362,8 @@ html, body {
     padding: 5.5em 0 2em 0;
     border: 1px solid grey;
     background-color: #f2f2f2;
+  }
+  .copyright p {
+    font-size: 1.2em;
   }
 }
