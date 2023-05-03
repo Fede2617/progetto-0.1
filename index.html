@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&family=Inconsolata:wght@200;300;400;500&family=Mukta:wght@200;300;400&display=swap" rel="stylesheet">
+
+     <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/e8ef4ea572.js" crossorigin="anonymous"></script>
+    <!-- Css -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+    <title>Federico Guerrato Portfolio</title>
+</head>
+<body>
+
+ <header>
+    <nav class="menu-container">
+        <h2>Federico Guerrato</h2>
+        <ul class="menu">
+            <li class="dropdown"><i class="fa-solid fa-bars fa-xl"></i></li>
+            <div class="dropdown-content">
+                <li class="hidden"><a href="#">Projects</a></li>
+                <li class="hidden"><a href="#">About me</a></li>
+                <li class="hidden"><a href="#">Contacts</a></li>
+            </div>
+        </ul>
+    </nav>
+ </header>
+
+ <content>
+    <div class="main-text">
+        <img
+            srcset="./assets/images/profile-image-150.jpg 150w,
+                    ./assets/images/profile-image-300.jpg 300w,
+                    ./assets/images/profile-image-400.jpg 400w,
+                    ./assets/images/profile-image-600.jpg 600w" 
+            sizes="(max-width: 150px) 150px,
+                   (max-width: 300px) 300px,
+                   (max-width: 400px) 400px,
+                   600px,"
+
+            src="./assets/images/profile-image-300.jpg">
+
+        <div class="background-image-one">
+            <img src="./assets/images/web-dev.svg">
+        </div>
+        <div class="background-image-two">
+            <img src="./assets/images/team-com.svg">
+        </div>
+        <div class="background-image-three">
+            <img src="./assets/images/spider-text.svg">
+        </div>
+        <div class="content-text">
+            <h1>Hello, I'm <span class="title-name">Federico</span></h1>
+            <p><strong>I'm a frontend developer</strong> based in <strong><span class="word-1">It</span><span class="word-2">a</span><span class="word-3">ly</span></strong>.</p>
+            <p> My goal is to learn and keep improving my websites and apps<br/>building them performant and eco-sustainable.</p>
+            <a href="#contacts"><button class="button-36" role="button">Contact me</button></a>
+        </div>
+    </div>
+
+    <div class="skills">
+        <h2>My Skills</h2>
+        <div class="goal-skills">
+            <img
+            src="./assets/images/responsive-image.svg"
+            srcset="">
+            <p>Make your website 100% responsive!</p>    
+            <img 
+            src="./assets/images/technology-icon.svg"
+            srcset="">
+            <p>Always updated on the latest techonogies.</p>  
+            <img 
+            src="./assets/images/problem-solving.svg"
+            srcset="">
+            <p>Problem solving skills.</p>  
+        </div>
+        
+        <div class="skills-image">
+            
+            <div class="firstimage">
+            <img
+            src="./assets/images/html-logo.svg"
+            srcset="">
+            </div>
+            
+            <div class="secondimage">
+            <img 
+            src="./assets/images/css-logo.svg"
+            srcset="">
+            </div>
+            
+            <div class="thirdimage">
+            <img 
+            src="./assets/images/git-logo.svg"
+            srcset=""
+            sizes="">
+            
+            </div>
+            <div class="fourthimage">
+            <img 
+            src="./assets/images/github-logo.svg"
+            srcset="">
+            </div>
+        </div>
+    </div>
+ </content>
+
+ <footer id="contacts">
+    <nav class="container-footer">
+        <div class="footer">
+            <a href="https://www.linkedin.com/in/federico-guerrato-0ba253240/" target="_blank"><i class="fa-brands fa-linkedin fa-xl"> Linkedin</i></a> 
+            <a href="#" target="_blank"><i class="fa-solid fa-envelope fa-xl" > Email</i></a>
+            <a href="#" target="_blank"><i class="fa-brands fa-github-alt fa-xl"> GitHub</i></a>
+        </div>
+    </nav>
+    <div class="copyright">
+        <p><em>Designed by Federico Guerrato</em></p>
+    </div>
+ </footer>

@@ -1,0 +1,186 @@
+@media screen and (max-width: 768) {
+    .main-text img {
+        width: 50%;
+    }
+  
+
+    
+}
+
+
+@media screen and (min-width: 768px) {
+
+    .menu-container {
+        border-bottom: 1px solid grey;
+    }
+
+    .menu-container .menu .dropdown {
+        display: none;
+    }
+
+
+   .menu-container .menu .dropdown-content {
+        display: flex;
+        position: inherit;
+        margin: 0 0.5em 0 70em;
+
+        a:hover {
+            font-size: 1.5em;
+            color: green;
+        }
+
+        .hidden {
+            margin: 0 0.5em;
+            border-style: none;
+        }
+        
+    }
+        .menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        
+    }
+
+    .main-text {
+        height: 20em;
+        display: flex;
+        justify-content: center;
+        margin: 5em 0 20em 0;
+
+        img {
+            margin-right: 5em;
+        }
+        .content-text {
+            height: 30em;
+            width: 30em;
+            
+            p {
+                font-size: 1.4em;
+            }
+        }
+
+        .background-image-one {
+            display: block;
+            position: absolute;
+            z-index: -1;
+            width: 20%;
+            top: 35em;
+            left: 2em;
+            transform: rotate(-20deg);
+        }
+        .background-image-two {
+            display: block;
+            position: absolute;
+            z-index: -1;
+            width: 18%;
+            right: 1em;
+
+        }
+            .background-image-three {
+                display: block;
+                position: absolute;
+                z-index: -1;
+                width: 20%;
+                top: 35em;
+                right: 2em;
+                transform: rotate(20deg);
+
+       }
+    
+    }      
+
+    .skills {
+        display: flex;
+        flex-direction: column;
+
+        h2 {
+            margin-bottom: 5em;
+        }
+
+        .goal-skills {
+            height: 10em;
+            width: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-end;
+            margin-bottom: 5em;
+
+
+            p {
+                align-items: flex-end;
+                position: relative;
+                left: -3em;
+            }
+
+            p:last-of-type {
+                left: 0.5em;
+            }
+
+            img {
+                align-self: flex-start;
+                justify-content: center;
+                width: 5%;
+                height: auto;
+                position: relative;
+                left: 7.2em;
+            }
+        }
+
+        .skills-image {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin-bottom: 5em;
+            justify-content: space-around;
+
+            .firstimage,
+            .secondimage,
+            .thirdimage,
+            .fourthimage {
+                position: inherit;
+                width: 10%;
+            }
+
+            .secondimage {
+                width: 9em;
+            }
+
+            img {
+                width: 100%;
+            }
+         
+        }
+    }
+    
+    .container-footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        
+        .footer {
+            left: -2em;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            width: 100%;
+
+        }
+
+    }
+
+    .copyright {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5.5em 0 2em 0;
+        border: 1px solid grey;
+        background-color: #f2f2f2;
+
+    }
+
+   
+}
