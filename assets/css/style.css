@@ -22,9 +22,9 @@ html, body {
   list-style: none;
 }
 .menu-container .menu .dropdown {
-  right: -6em;
-  height: 10em;
-  width: 10em;
+  margin-left: 3em;
+  height: 1em;
+  width: 5em;
   position: relative;
   display: inline-block;
   z-index: 0;
@@ -55,7 +55,8 @@ html, body {
   color: inherit;
   display: block;
 }
-.menu-container .menu .dropdown:hover + .dropdown-content {
+
+.dropdown:hover > .dropdown-content {
   display: block;
 }
 
@@ -71,6 +72,9 @@ html, body {
 }
 .main-text .content-text {
   flex-shrink: 2;
+}
+.main-text .content-text .title-name {
+  color: #86c5d8;
 }
 .main-text .content-text h1 {
   font-size: 3em;
@@ -142,6 +146,9 @@ html, body {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.skills .skills-image .tooltip-container {
+  visibility: hidden;
 }
 .skills .skills-image img {
   margin-top: 2em;
@@ -222,14 +229,27 @@ html, body {
 @media screen and (min-width: 768px) {
   .menu-container {
     border-bottom: 1px solid grey;
+    display: flex;
+    flex-direction: row;
   }
-  .menu-container .menu .dropdown {
+  .menu-container .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .menu-container .fa-solid {
     display: none;
   }
   .menu-container .menu .dropdown-content {
     display: flex;
-    position: inherit;
-    margin: 0 0.5em 0 70em;
+    flex-direction: row;
+    position: absolute;
+    top: -1em;
+    left: 30em;
+    list-style-type: none;
+  }
+  .menu-container .menu .dropdown-content a {
+    text-decoration: none;
   }
   .menu-container .menu .dropdown-content a:hover {
     font-size: 1.5em;
@@ -239,10 +259,8 @@ html, body {
     margin: 0 0.5em;
     border-style: none;
   }
-  .menu {
+  .dropdown:hover > .dropdown-content {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
   }
   .main-text {
     height: 20em;
@@ -274,7 +292,7 @@ html, body {
     position: absolute;
     z-index: -1;
     width: 15%;
-    right: 1em;
+    bottom: 10em;
   }
   .main-text .background-image-three {
     display: block;
@@ -333,6 +351,95 @@ html, body {
   .skills .skills-image .fourthimage {
     position: inherit;
     width: 7%;
+    filter: drop-shadow(-0.55rem 0 0.2rem rgb(53, 34, 25));
+  }
+  .skills .skills-image .firstimage > .tooltip-container {
+    display: inline-block;
+    position: absolute;
+    width: 5em;
+    height: 3em;
+    text-align: center;
+    padding: 0.2em 0;
+    border-radius: 6px;
+    left: -1.5em;
+    bottom: -3em;
+  }
+  .skills .skills-image .firstimage > .tooltip-container .tooltiptext {
+    visibility: hidden;
+    position: absolute;
+    width: 6em;
+    background-color: rgb(58, 50, 50);
+    color: #fff;
+    z-index: 1;
+  }
+  .skills .skills-image .secondimage > .tooltip-container {
+    display: inline-block;
+    position: absolute;
+    width: 5em;
+    height: 3em;
+    text-align: center;
+    padding: 0.2em 0;
+    border-radius: 6px;
+    left: -2.8em;
+    bottom: -3em;
+  }
+  .skills .skills-image .secondimage > .tooltip-container .tooltiptext {
+    visibility: hidden;
+    position: absolute;
+    width: 6em;
+    background-color: rgb(58, 50, 50);
+    color: #fff;
+    z-index: 1;
+  }
+  .skills .skills-image .thirdimage > .tooltip-container {
+    display: inline-block;
+    position: absolute;
+    width: 5em;
+    height: 3em;
+    text-align: center;
+    padding: 0.2em 0;
+    border-radius: 6px;
+    left: -0.5em;
+    bottom: -3em;
+  }
+  .skills .skills-image .thirdimage > .tooltip-container .tooltiptext {
+    visibility: hidden;
+    position: absolute;
+    width: 6em;
+    background-color: rgb(58, 50, 50);
+    color: #fff;
+    z-index: 1;
+  }
+  .skills .skills-image .fourthimage > .tooltip-container {
+    display: inline-block;
+    position: absolute;
+    width: 5em;
+    height: 3em;
+    text-align: center;
+    padding: 0.2em 0;
+    border-radius: 6px;
+    left: -1em;
+    bottom: -3em;
+  }
+  .skills .skills-image .fourthimage > .tooltip-container .tooltiptext {
+    visibility: hidden;
+    position: absolute;
+    width: 6em;
+    background-color: rgb(58, 50, 50);
+    color: #fff;
+    z-index: 1;
+  }
+  .skills .skills-image .firstimage:hover .tooltiptext {
+    visibility: visible;
+  }
+  .skills .skills-image .secondimage:hover .tooltiptext {
+    visibility: visible;
+  }
+  .skills .skills-image .thirdimage:hover .tooltiptext {
+    visibility: visible;
+  }
+  .skills .skills-image .fourthimage:hover .tooltiptext {
+    visibility: visible;
   }
   .skills .skills-image .secondimage {
     width: 5.5em;

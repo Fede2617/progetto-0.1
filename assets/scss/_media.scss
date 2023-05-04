@@ -12,18 +12,33 @@
 
     .menu-container {
         border-bottom: 1px solid grey;
-    }
+        display: flex;
+        flex-direction: row;
 
-    .menu-container .menu .dropdown {
+        .menu {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+
+        .fa-solid {
         display: none;
+        }
     }
-
 
    .menu-container .menu .dropdown-content {
         display: flex;
-        position: inherit;
-        margin: 0 0.5em 0 70em;
+        flex-direction: row;
+        position: absolute;
+        top: -1em;
+        left: 30em;
+        list-style-type: none;
 
+        a {
+            text-decoration: none;
+        }
+       
         a:hover {
             font-size: 1.5em;
             color: green;
@@ -35,12 +50,11 @@
         }
         
     }
-        .menu {
+
+    .dropdown:hover > .dropdown-content{ 
         display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        
     }
+        
 
     .main-text {
         height: 20em;
@@ -75,7 +89,7 @@
             position: absolute;
             z-index: -1;
             width: 15%;
-            right: 1em;
+            bottom: 10em;
 
         }
             .background-image-three {
@@ -146,9 +160,120 @@
             .fourthimage {
                 position: inherit;
                 width: 7%;
+                filter: drop-shadow(-0.55rem 0 0.20rem rgb(53, 34, 25));    
+                
+                }
+
+                .firstimage > .tooltip-container{
+                    display: inline-block;
+                    position: absolute;
+                    width: 5em;
+                    height: 3em;
+                    text-align: center;
+                    padding: 0.2em 0;
+                    border-radius: 6px;
+                    left: -1.5em;
+                    bottom: -3em;
+
+                        .tooltiptext {
+                            visibility: hidden;
+                            position: absolute;
+                            width: 6em;
+                            background-color: rgb(58, 50, 50);
+                            color: #fff;
+                            z-index: 1;
+                            
+                        }
+
+                } 
+
+                .secondimage > .tooltip-container{
+                    display: inline-block;
+                    position: absolute;
+                    width: 5em;
+                    height: 3em;
+                    text-align: center;
+                    padding: 0.2em 0;
+                    border-radius: 6px;
+                    left: -2.8em;
+                    bottom: -3em;
+
+                        .tooltiptext {
+                            visibility: hidden;
+                            position: absolute;
+                            width: 6em;
+                            background-color: rgb(58, 50, 50);
+                            color: #fff;
+                            z-index: 1;
+                            
+                        }
+
+                }
+
+                .thirdimage > .tooltip-container{
+                    display: inline-block;
+                    position: absolute;
+                    width: 5em;
+                    height: 3em;
+                    text-align: center;
+                    padding: 0.2em 0;
+                    border-radius: 6px;
+                    left: -0.5em;
+                    bottom: -3em;
+
+                        .tooltiptext {
+                            visibility: hidden;
+                            position: absolute;
+                            width: 6em;
+                            background-color: rgb(58, 50, 50);
+                            color: #fff;
+                            z-index: 1;
+                            
+                        }
+
+                }
+
+                .fourthimage > .tooltip-container{
+                    display: inline-block;
+                    position: absolute;
+                    width: 5em;
+                    height: 3em;
+                    text-align: center;
+                    padding: 0.2em 0;
+                    border-radius: 6px;
+                    left: -1em;
+                    bottom: -3em;
+
+                        .tooltiptext {
+                            visibility: hidden;
+                            position: absolute;
+                            width: 6em;
+                            background-color: rgb(58, 50, 50);
+                            color: #fff;
+                            z-index: 1;
+                            
+                        }
+
+                }
+
+
+
+            .firstimage:hover .tooltiptext {
+                visibility: visible;
             }
 
-            .secondimage {
+            .secondimage:hover .tooltiptext {
+                visibility: visible;
+            }
+
+            .thirdimage:hover .tooltiptext {
+                visibility: visible;
+            }
+
+            .fourthimage:hover .tooltiptext {
+                visibility: visible;
+            }
+                .secondimage {
                 width: 5.5em;
             }
 

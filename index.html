@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Favicon-->
+    <link rel="icon" href="./assets/images/favicon.png">
     <!-- FONT-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,13 +25,14 @@
     <nav class="menu-container">
         <h2>Federico Guerrato</h2>
         <ul class="menu">
-            <li class="dropdown"><i class="fa-solid fa-bars fa-xl"></i></li>
-            <div class="dropdown-content">
-                <li class="hidden"><a href="#">Projects</a></li>
-                <li class="hidden"><a href="#">About me</a></li>
-                <li class="hidden"><a href="#">Contacts</a></li>
-            </div>
-        </ul>
+                    <div class="dropdown"><i class="fa-solid fa-bars fa-xl"></i>
+                    <ul class="dropdown-content">
+                    <li class="hidden"><a href="#">Projects</a></li>
+                    <li class="hidden"><a href="#">About me</a></li>
+                    <li class="hidden"><a href="#contacts">Contacts</a></li>
+                    </ul>
+                </div>
+         </ul>
     </nav>
  </header>
 
@@ -86,12 +89,18 @@
             <img
             src="./assets/images/html-logo.svg"
             srcset="">
+            <div class="tooltip-container">
+                <span class="tooltiptext">HTML5</span>
+            </div>
             </div>
             
             <div class="secondimage">
             <img 
             src="./assets/images/css-logo.svg"
             srcset="">
+            <div class="tooltip-container">
+                <span class="tooltiptext">CSS3</span>
+            </div>
             </div>
             
             <div class="thirdimage">
@@ -99,26 +108,32 @@
             src="./assets/images/git-logo.svg"
             srcset=""
             sizes="">
-            
+            <div class="tooltip-container">
+                <span class="tooltiptext">Git</span>
+            </div>
             </div>
             <div class="fourthimage">
             <img 
             src="./assets/images/github-logo.svg"
             srcset="">
+            <div class="tooltip-container">
+                <span class="tooltiptext">Github</span>
+            </div>
             </div>
         </div>
     </div>
  </content>
-
  <footer id="contacts">
     <nav class="container-footer">
         <div class="footer">
             <a href="https://www.linkedin.com/in/federico-guerrato-0ba253240/" target="_blank"><i class="fa-brands fa-linkedin fa-xl"> Linkedin</i></a> 
             <a href="#" target="_blank"><i class="fa-solid fa-envelope fa-xl" > Email</i></a>
-            <a href="#" target="_blank"><i class="fa-brands fa-github-alt fa-xl"> GitHub</i></a>
+            <a href="https://github.com/Fede2617" target="_blank"><i class="fa-brands fa-github-alt fa-xl"> GitHub</i></a>
         </div>
     </nav>
     <div class="copyright">
         <p><em>Designed by Federico Guerrato</em></p>
     </div>
  </footer>
+
+</body>
