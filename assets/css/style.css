@@ -44,6 +44,9 @@ body {
   position: absolute;
   min-width: 160px;
   z-index: 1;
+  background-image: url(/assets/images/cool-background\(3\).png);
+  background-size: cover;
+  list-style: none;
 }
 .menu-container .menu .dropdown-content .dropdown-content a {
   display: block;
@@ -291,6 +294,11 @@ body {
   align-items: center;
   margin: 5em 0;
 }
+.aboutme-container .aboutme-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .aboutme-container h1 {
   margin: 1.2em 0;
   font-size: 2em;
@@ -362,6 +370,7 @@ body {
     top: -1em;
     left: 30em;
     list-style-type: none;
+    background-image: none;
   }
   .menu-container .menu .dropdown-content a {
     text-decoration: none;
@@ -606,4 +615,44 @@ body {
   .projects-container p {
     margin-top: auto;
   }
-}
+  .copyright-pagetwo p {
+    font-size: 1.2em;
+  }
+  .aboutme-container {
+    display: flex;
+    flex-direction: row;
+  }
+  .aboutme-container img {
+    height: 50%;
+    width: 30%;
+  }
+  .aboutme-container .aboutme-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 5em;
+    line-height: 1.6em;
+  }
+  .aboutme-container .aboutme-text h1 {
+    font-size: 3em;
+    padding: 1em;
+  }
+  .aboutme-container .aboutme-text p {
+    font-size: 1.2em;
+  }
+  .resume {
+    margin-top: 15em;
+  }
+  .resume h2 {
+    font-size: 2em;
+  }
+  .resume .resume-container {
+    font-size: 1.5em;
+  }
+  .resume .resume-container li {
+    margin-top: 2em;
+  }
+  .copyright-three p {
+    font-size: 1.2em;
+  }
+}/*# sourceMappingURL=style.css.map */
