@@ -67,7 +67,7 @@ body {
   display: block;
 }
 
-.dropdown:hover > .dropdown-content {
+.dropdown:active > .dropdown-content {
   display: block;
 }
 
